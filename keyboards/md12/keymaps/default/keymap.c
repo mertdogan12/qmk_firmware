@@ -8,3 +8,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_ENT
     )
 };
+
+#ifdef OLED_ENABLE
+
+// Draw to OLED
+bool oled_task_user() {
+    oled_set_cursor(0, 1);
+
+    oled_write("Hallo World!", false);
+
+    return false;
+}
+
+#endif
