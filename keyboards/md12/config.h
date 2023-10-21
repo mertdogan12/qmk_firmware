@@ -3,6 +3,8 @@
 
 #pragma once
 
+#define OLED_DISPLAY_128X64
+
 /*
  * Feature disable options
  *  These options are also useful to firmware size reduction.
